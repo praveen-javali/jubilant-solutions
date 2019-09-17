@@ -1,0 +1,836 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+	
+    <title> Jubilant -Solution Pathfinder</title>
+    <meta name="description" content="Jubilant - solution pathfinder,UI&UX,Web application and mobile application development "/>
+	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+	
+	<!--Google Material icon-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" media="all"/>
+    
+    <!--Propeller css-->
+    <link rel="stylesheet" href="assets/css/propeller.min.css" type="text/css" media="all"/>
+    
+    <!--Owl Carousel css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css" type="text/css" media="all"/>
+    
+    <!--Quantify css-->
+    <link rel="stylesheet" href="assets/css/quantify-theme.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/quantify.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="assets/css/appstyle.css" type="text/css" media="all"/>
+    <script src="assets/js/app.js"></script>
+</head>
+<body>
+	
+	<!----------------------------
+		Loader 
+ 	----------------------------->
+  	<div class="showbox" id="preloader">
+	  <div class="loader">
+		<div align="center" class="fond">
+		  <div class="contener_general">
+			  <div class="contener_mixte"><div class="ballcolor ball_1">&nbsp;</div></div>
+			  <div class="contener_mixte"><div class="ballcolor ball_2">&nbsp;</div></div>
+			  <div class="contener_mixte"><div class="ballcolor ball_3">&nbsp;</div></div>
+			  <div class="contener_mixte"><div class="ballcolor ball_4">&nbsp;</div></div>
+		  </div>
+		  <p class="loading-text">Loading...</p>
+		</div>
+	  </div>
+	</div>
+		
+	<!----------------------------
+		Navbar
+ 	----------------------------->
+	<nav class="navbar navbar-inverse navbar-fixed-top pmd-navbar primary-navbar">
+		<div class="container"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button class="pmd-ripple-effect navbar-toggle pmd-navbar-toggle" type="button">
+                	<span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" title="" href="index.html">
+                	<img class="logo-dark" src="assets/img/logo_jubilant/logo_horizontal_60x10_dark_wings_solid.svg" alt="Quantify - One Page HTML Theme" />
+                    <img class="logo-light" src="assets/img/logo_jubilant/logo_horizontal_60x10_light_wings_solid.svg" alt="Quantify - One Page HTML Theme" />
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse pmd-navbar-sidebar">
+                <!--Navbar Search -->
+				<div class="pmd-navbar-right-icon pull-right">
+                    <a class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect search-toggle" href="javascript:void(0);">
+                        <i class="material-icons md-dark pmd-sm pmd-svg-icon">search</i>
+                        <i class="material-icons md-dark pmd-sm pmd-svg-icon">close</i>
+                    </a>
+                    <form class="search-form" method="get" id="searchform">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="Search" placeholder="Search" />
+                        </div>
+                    </form>
+              	</div><!--End Navbar Search -->
+                <!-- Navbar Right -->
+              	<ul class="nav navbar-nav navbar-right">
+                	<li><a href="#intro">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#uxandui">UI&UX</a></li>
+                    <li><a href="#webdev">WebDev</a></li>
+                    <li><a href="#team-members">Leadership</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <span class="nav-active"></span>
+              	</ul><!-- End Navbar Right -->
+            </div>
+      	</div>
+        <div class="pmd-sidebar-overlay"></div> 
+    </nav> <!-- Emd Navbar -->
+    
+    <!----------------------------
+		Intro section
+ 	----------------------------->
+     <div id="intro" class="intro-section owl-carousel text-center">
+        <div class="intro-img intro-banner-left" style="background-image: url('assets/img/bg-image.jpg'); background-size: cover;">
+            <div class="container">
+                <div class="row" style="margin-top:300px; margin-left:50px">
+                    <div class="col-md-4">
+                        <div class="text-left">
+                           <div class="header-title">
+                               <div class="intro-text introduction">
+                                    <h1 class="inverse">
+                                            Building Engaging user experiences to
+                                            create lasting impact
+                                    </h1>
+                                    <p class="lead inverse banner-content"></p>
+                                    <button style="display: none" class="btn btn-primary pmd-btn-outline pmd-ripple-effect btn-lg">
+                                        Get Started
+                                    </button>
+                                </div>
+                       
+                                </div>
+                            </div>
+                      </div>
+                    <div class="col-md-8">
+                <div class="text-right">
+                        
+            <div class=" header-title intro-img intro-banner-right" style="background-image: url('assets/img/hero-banner-1.png'); margin-top: -275px"></div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+</div>
+<!--2-->
+
+<div class="intro-img intro-banner-left" style="background-image: url('assets/img/bg-image.jpg'); background-size: cover;">
+    <div class="container">
+        <div class="row" style="margin-top:300px; margin-left:50px">
+            <div class="col-md-4">
+                <div class="text-left">
+                   <div class="header-title">
+                       <div class="intro-text introduction">
+                            <h1 class="inverse">
+                                    We develop and deliver products on time, every time.
+                            </h1>
+                            <p class="lead inverse banner-content"></p>
+                            <button style="display: none" class="btn btn-primary pmd-btn-outline pmd-ripple-effect btn-lg">
+                                Get Started
+                            </button>
+                        </div>
+               
+                        </div>
+                    </div>
+              </div>
+            <div class="col-md-8">
+        <div class="text-right">
+                
+    <div class=" header-title intro-img intro-banner-right" style="background-image: url('assets/img/hero-banner-2.png'); margin-top: -275px"></div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+<!--end-2-->
+
+<!--3-->
+<div class="intro-img intro-banner-left" style="background-image: url('assets/img/bg-image.jpg'); background-size: cover;">
+    <div class="container">
+        <div class="row" style="margin-top:300px; margin-left:50px">
+            <div class="col-md-4">
+                <div class="text-left">
+                   <div class="header-title">
+                       <div class="intro-text introduction">
+                            <h1 class="inverse">
+                                    Building customer focused Products by following
+                                    Best Practices     
+                            </h1>
+                            <p class="lead inverse banner-content"></p>
+                            <button style="display: none" class="btn btn-primary pmd-btn-outline pmd-ripple-effect btn-lg">
+                                Get Started
+                            </button>
+                        </div>
+               
+                        </div>
+                    </div>
+              </div>
+            <div class="col-md-8">
+        <div class="text-right">
+                
+    <div class=" header-title intro-img intro-banner-right" style="background-image: url('assets/img/hero-banner-3.png'); margin-top: -275px"></div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<!--end3-->
+<!--4-->
+<div class="intro-img intro-banner-left" style="background-image: url('assets/img/bg-image.jpg'); background-size: cover;">
+    <div class="container">
+        <div class="row" style="margin-top:300px; margin-left:50px">
+            <div class="col-md-4">
+                <div class="text-left">
+                   <div class="header-title">
+                       <div class="intro-text introduction">
+                            <h1 class="inverse">
+                                    Building Products that users love to use,
+                                    browse get hooked to
+                            </h1>
+                            <p class="lead inverse banner-content">
+                                
+                            </p>
+                            <button style="display: none" class="btn btn-primary pmd-btn-outline pmd-ripple-effect btn-lg" >
+                                Get Started
+                            </button>
+                        </div>
+               
+                        </div>
+                    </div>
+              </div>
+            <div class="col-md-8">
+        <div class="text-right">
+                
+    <div class=" header-title intro-img intro-banner-right" style="background-image: url('assets/img/hero-banner-4.png');  margin-top: -275px"></div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+<!--end4-->
+<!--5-->
+<div class="intro-img intro-banner-left" style="background-image: url('assets/img/bg-image.jpg'); background-size: cover;">
+    <div class="container">
+        <div class="row" style="margin-top:300px; margin-left:50px">
+            <div class="col-md-8">
+                <div class="text-left">
+                    <div class=" header-title intro-img intro-banner-right" style="background-image: url('assets/img/hero-banner-5.png'); margin-top: -275px"></div>
+                   
+                </div>
+              </div>
+            <div class="col-md-4">
+                <div class="text-left">
+                    <div class="header-title">
+                       <div class="intro-text introduction">
+                            <h1 class="inverse">
+                                Get Carefully Crafted Interfaces & Engaging Experiences for your Digital Products
+
+                            </h1>
+                            <p class="lead inverse banner-content">
+                              
+                            </p>
+                            <button style="display: none" class="btn btn-primary pmd-btn-outline pmd-ripple-effect btn-lg">
+                                Get Started
+                            </button>
+                        </div>
+               
+                    </div>
+                    
+
+                </div>
+            </div>
+    </div>
+</div>
+
+
+</div>
+<!--end5-->
+
+
+</div>
+
+
+
+
+    <!-- End Section Intro Slider -->
+      	
+    <!-- Section About Us -->
+    <div id="about" class="section">
+        <div class="container"> 
+            <h2 class="text-center">About Us</h2>
+            <p class="lead text-center">We Help Startups, Agencies and SMEs build Engaging, Measurable & Scalable Software Products</p>
+            <!-- Our Mission -->	
+            <div class="card-media row">
+                <div class="col-sm-6 col-xs-12">
+                    <img src="assets/img/our-mission_2.png" title="Our Mission" alt="Our Mission" class="img-responsive" />
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                   <div class="card-media-body">
+						<h3 class="card-media-title text-uppercase">Our Mission</h3>
+				
+                        <h5> <blockquote><strong><q>We are on a single mission of building usable and scalable products and successful businesses with lean and agile methodologies.</q></strong></blockquote></h5>
+
+                    </div>
+                </div>
+            </div><!-- End Our Mission -->	
+            <!-- Our Vision -->
+            <div class="card-media row">
+                <div class="col-sm-6 col-xs-12 pull-right">
+                    <img src="assets/img/our-vision_2.png" title="Our Vision" alt="Our Vision" class="img-responsive" />
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="card-media-body">
+                        <h3 class="card-media-title text-uppercase">Our Vision</h3>
+                        <h5> <blockquote><strong><q>To be innovatively provide business solutions with state-of-art technology to help human and society as a whole.</q></strong></blockquote></h5>
+                    </div>
+                </div>
+            </div><!-- End Our Vision -->
+            <!-- Our Goals -->
+            <div class="card-media row">
+                <div class="col-sm-6 col-xs-12">
+                	<img src="assets/img/our-goals_2.png" title="Our Goals" alt="Our Goals" class="img-responsive" />
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="card-media-body">
+                        <h3 class="card-media-title text-uppercase">Our Goals</h3>
+                        <h5> <blockquote><strong><q>We solves the challenges business face today, effectively and efficiently towords their productivity and profitability goal.</q></strong></blockquote></h5>
+
+                    </div>
+                </div>
+            </div><!-- End Our Goals -->
+            <!-- Our Accomplishments -->
+            <div class="card-media row" style="display: none">
+                <div class="col-sm-6 col-xs-12 pull-right">
+                    <img src="assets/img/our-accomplishments_2.png" title="Our Accomplishments" alt="Our Accomplishments" class="img-responsive" />
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="card-media-body">
+                        <h3 class="card-media-title text-uppercase">Our Accomplishments</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti iusto voluptatum voluptas soluta, rem! Deserunt sint nam consequatur laborum, aperiam quod, quo impedit ea. Veniam, doloribus, molestias? Architecto, maxime et? amet consectetur adipiscing.</p>
+                    </div>
+                </div>
+            </div><!-- End Our Accomplishments -->
+            
+        </div>
+    </div><!-- End Section About Us --> 
+    
+    <!----------------------------
+		Section How We help
+     ----------------------------->
+     <div id="uxandui" class="section" style="background-color:#fff">
+        <div class="container"> 
+            <h2 class="text-center">We Can Help You User Interface and User Experience</h2>
+            <div class="lead-content">
+                <p  class="lead">We, So naturally, our approach revolves around delivering designs & experiences in an agile, transparent & an iterative manner.</p>
+                <p class="lead">We are a process driven organization . Hence, the process starts with people & ideas while following the standards of a Lean Startup . It helps us in finding the critical path to quickly arrive at a robust & a usable design.</p>
+            </div>
+            
+            <!-- Our ux and ui -->	
+            <div class="card-media row">
+                <div class="col-sm-6 col-xs-12">
+                    <img src="assets/img/whatwedo-ux-ui.png" title="Our Mission" alt="Our Mission" class="img-responsive" />
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                   <div class="card-media-body">
+                        <h3 class="card-media-title text-uppercase">Deliver delightful customer experiences to</h3>
+                        <ul>
+                            <li>Increase retention &amp; referral to build a strong customer base.</li>
+                            <li>Increase conversions by reducing dropouts from customer journey.</li>
+                            <li>Empathize with your customers &amp; stay ahead of the competition.</li>
+                        </ul> 
+                    </div>
+                </div>
+            </div><!-- End ux and ui -->	
+            <!-- web and mobile development -->
+            <div class="card-media row">
+                <div class="col-sm-6 col-xs-12 pull-right">
+                    <img src="assets/img/whatwedo-web-mobile.png" title="Our Vision" alt="Our Vision" class="img-responsive" />
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="card-media-body">
+                        <h3 class="card-media-title text-uppercase">Iteratively build web &amp; mobile applications to</h3>
+                        <ul><li>Disrupt the market by launching innovative products for your customers.</li>
+                            <li>Digitally transform your business to remain competitive.</li>
+                            <li>Make your business accessible at all times with an online presence.</li>
+                            <li>Generate leads and grow 2X faster than your competitors.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- End Our Vision -->
+           
+            
+        </div>
+    </div>
+
+     <!----------------------------
+		End Section How We help
+     ----------------------------->
+
+<!----------------------------
+		Section what we offer UX/UI
+     ----------------------------->
+     <section id="uiservices" class="section-card section-offers bg-primary-light"> 
+     <!-- Container -->
+     <div class="container">
+         <h2 class="text-center "> UI and UX Design Service</h2>
+         <p class="section-title text-center ">
+             Jubilant's UI &amp; UX Design Service</p>
+             <div class="offer-card mx-auto">
+                 <div class="row justify-content-center">
+                     <div class="col-6 col-sm-4 col-lg-3 mb-4 mb-lg-5 text-center animation-element fadeinup cf">
+                         <div class="pmd-card-icon mb-1"> <i class="pmd-avatar-list-img img-lg mr-0 bg-secondary-light"> 
+                                 <img class="img-fluid" src="assets/img/ux_images/Web-design-ui.png" alt="Web-design-ui" />
+                            </i>
+                        </div>
+                        <h6 class="card-title mb-0 mx-md-3">Website Design UI &amp; UX</h6>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mb-4 mb-lg-5 text-center animation-element fadeinup cf">
+                        <div class="pmd-card-icon mb-1"> 
+                            <i class="pmd-avatar-list-img img-lg mr-0 bg-secondary-light"> 
+                                    <img class="img-fluid" src="assets/img/ux_images/mobile-app-design.svg" alt="Mobile App Design" />
+                            </i>
+                        </div>
+                        <h6 class="card-title mb-0 mx-md-3">Mobile Application Design UI &amp; UX</h6>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mb-4 mb-lg-5 text-center animation-element fadeinup cf">
+                        <div class="pmd-card-icon mb-1"> 
+                            <i class="pmd-avatar-list-img img-lg mr-0 bg-secondary-light"> 
+                                    <img class="img-fluid" src="assets/img/ux_images/Product-design-icon.svg" alt="Product-design-icon" />
+                            </i>
+                        </div>
+                        <h6 class="card-title mb-0 mx-md-3">Product Design UI &amp; UX</h6>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mb-4 mb-lg-5 text-center animation-element fadeinup cf">
+                        <div class="pmd-card-icon mb-1"> 
+                            <i class="pmd-avatar-list-img img-lg mr-0 bg-secondary-light"> 
+                                    <img class="img-fluid" src="assets/img/ux_images/Enterprise-ASP.Net-Development.png" alt="Enterprise App Design" />
+                            </i>
+                        </div>
+                        <h6 class="card-title mb-0 mx-md-3">Enterprise Application Design</h6>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mb-4 mb-lg-5 text-center animation-element fadeinup cf">
+                        <div class="pmd-card-icon mb-1"> 
+                            <i class="pmd-avatar-list-img img-lg mr-0 bg-secondary-light"> 
+                                    <img class="img-fluid" src="assets/img/ux_images/consultant-1.svg" alt="consultant" />
+                            </i>
+                        </div>
+                        <h6 class="card-title mb-0 mx-md-3">UI &amp; UX Consulting</h6>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-3 mb-4 mb-lg-5 text-center animation-element fadeinup cf">
+                        <div class="pmd-card-icon mb-1"> 
+                            <i class="pmd-avatar-list-img img-lg mr-0 bg-secondary-light"> 
+                                    <img class="img-fluid" src="assets/img/ux_images/Progressive-webapp.svg" alt="Progressive Web Applications" />
+                            </i>
+                        </div>
+                        <h6 class="card-title mb-0 mx-md-3">Progressive Web Application UI &amp; UX</h6>
+                    </div><div class="col-6 col-sm-4 col-lg-3 mb-4 mb-lg-5 text-center animation-element fadeinup cf">
+                        <div class="pmd-card-icon mb-1"> 
+                            <i class="pmd-avatar-list-img img-lg mr-0 bg-secondary-light"> 
+                                    <img class="img-fluid" src="https://d3dkvycwtjicra.cloudfront.net/wp-content/uploads/2018/12/04095454/cross-platform.png" alt="cross-platform" />
+                            </i>
+                        </div>
+                        <h6 class="card-title mb-0 mx-md-3">Cross-platform Responsive Design</h6>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End Container -->
+    </section>
+
+<!---------------------
+     mobile and web development
+------------------------>
+
+<div id="webdev" class="section" style="background-color:#fff">
+    <div class="container"> 
+        <h2 class="text-center">Web and Mobile Development</h2>
+        <p class="lead text-center">We build custom enterprise mobile applications and web development , which means, we can develop almost anything as per your needs which is technologically feasible.</p>
+        <!-- Our ux and ui -->	
+        <div class="card-media row">
+            <div class="col-sm-6 col-xs-12">
+                <img src="assets/img/webapp.svg" title="uxandui" alt="uiandux" class="img-responsive" />
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="card-media-body">
+                    <h3 class="card-media-title text-uppercase">Generate your business revenue 2X by developing a new web application</h3>
+                    <ul>
+                        <li>Share your products, services, and other offerings on a website to generate leads</li>
+                        <li>Provide a better understanding of the offerings on your business website</li>
+                        <li>Develop a brand recognition with an official website to attract new prospects</li>
+                    </ul> 
+                </div>
+            </div>
+        </div><!-- End ux and ui -->	
+        <!-- web and mobile development -->
+        <div class="card-media row">
+            <div class="col-sm-6 col-xs-12 pull-right">
+                <img src="assets/img/mobileapp.svg" title="Our Vision" alt="Our Vision" class="img-responsive" />
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="card-media-body">
+                    <h3 class="card-media-title text-uppercase"> Get a high performing progressive web application</h3>
+                    <ul>
+                        <li>Start processing a million user requests at the same time without any hassle</li>
+                        <li>Build a highly efficient web platform to handle a large volume of orders at once</li>
+                        <li>Enable customer engagement through multiple user touch points</li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- End Our Vision -->
+       
+        
+    </div>
+</div>
+
+
+<!---------------------
+     mobile and web development
+------------------------>
+<!-----------------------------------
+development 
+------------------------->
+
+
+<section  id="webdevservice" class="section-card section-offers bg-primary-light"> <!-- Container -->
+    <div class="container"><h2 class="text-center "> What Do We Offer in Web Development and Mobile Development?</h2>
+      <p class="section-title section-title-lead text-center ">
+          We build custom websites. Hence, we can develop almost anything as per 
+          your needs which is technologically feasible. We have developed the 
+          following types of Custom web applications.</p> 
+          <!--<div class="offer-card mx-auto"></div> -->
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-4 col-lg-2 text-center ">
+              <div class="pmd-card-icon"> 
+                <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                 
+                      <img class="img-fluid" src="assets/img/dev_image/scalable-web.png" alt="scalable-web" />
+               
+                </i>
+                <h6 class="card-title"> Scalable Web Platform</h6>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 text-center ">
+              <div class="pmd-card-icon"> 
+                <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                    <img class="img-fluid" src="assets/img/dev_image/Progressive-webapp.svg" alt="Progressive Web Applications" />
+                </i>
+                <h6 class="card-title"> Progressive Web Application</h6>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 text-center ">
+              <div class="pmd-card-icon">
+                 <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2">
+                        <img class="img-fluid" src="assets/img/dev_image/workflow-management.png" alt="workflow-management" />
+                </i><h6 class="card-title"> Workflow Management System</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center ">
+                  <div class="pmd-card-icon"> 
+                    <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                        <img class="img-fluid" src="assets/img/dev_image/Shopping-Cart-ECommerce-Development.png" alt="Shopping Cart & ECommerce Development" />
+                    </i>
+                    <h6 class="card-title"> E-commerce Platform</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center ">
+                  <div class="pmd-card-icon"> 
+                    <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                        <img class="img-fluid" src="assets/img/dev_image/Marketing-websites.png" alt="Marketing-websites" />
+                    </i>
+                    <h6 class="card-title"> Marketing Website</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center ">
+                  <div class="pmd-card-icon"> 
+                    <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                        <img class="img-fluid" src="assets/img/dev_image/enterprise.png" alt="Enterprise App Design" />
+                    </i>
+                    <h6 class="card-title"> Enterprise Web Development</h6>
+                  </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2 text-center ">
+                  <div class="pmd-card-icon"> 
+                    <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                        <img class="img-fluid" src="assets/img/dev_image/food-ordering.png" alt="food-ordering" />
+                    </i>
+                    <h6 class="card-title"> Food Ordering</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center ">
+                  <div class="pmd-card-icon"> 
+                    <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                        <img class="img-fluid" src="assets/img/dev_image/Social-Network-Development.png" alt="Social Network Development" />
+                    </i>
+                    <h6 class="card-title"> Social Network</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 text-center ">
+                  <div class="pmd-card-icon"> <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                      <img class="img-fluid" src="assets/img/dev_image/travel-application.png" alt="travel-application" />
+                  </i>
+                  <h6 class="card-title"> Travel Web Application</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-2 text-center ">
+                <div class="pmd-card-icon"> 
+                  <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                      <img class="img-fluid" src="assets/img/dev_image/transportaion-logistics.png" alt="transportaion-logistics" />
+                  </i>
+                  <h6 class="card-title"> Transportation and Logistics</h6>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-2 text-center ">
+                <div class="pmd-card-icon"> 
+                  <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light mb-2"> 
+                      <img class="img-fluid" src="assets/img/dev_image/automation-application.png" alt="automation-application" />
+                  </i>
+                  <h6 class="card-title"> Automation Web Application</h6>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End Container -->
+        </section> <!-- END Section || Offers --> 
+
+
+
+    <!----------------------------
+		Team members section 
+ 	----------------------------->  
+     <div id="team-members" class="section text-center" style="background-color: rgb(228, 224, 222)">
+    	<div class="container"> 
+            <h2 class="section-title section-title-icon text-center"> 
+                <i class="material-icons pmd-icon-circle pmd-icon-xl bg-secondary-light"> 
+                    <img class="img-fluid lazyloaded" src="assets/img/leaders.svg" alt="ic_leaders" data-was-processed="true">
+                    
+                </i>
+                <p> Leadership</p>
+            </h2>
+            
+            <!-- Members List-->
+
+            <div class="container "> 
+            <div class="col-md-3 text-center mem-card" >
+                <!-- Members Card-->
+                <div class="member-item   text-center">
+                	<div class="pmd-card pmd-z-depth pmd-card-overlay  text-center pagination-centered"> 
+                        <!-- Card media -->
+                        <div class="pmd-card-media pmd-card-media-overlay">
+							<a href="javascript:void(0)" class="btn pmd-btn-fab pmd-btn-flat pmd-btn-outline btn-default view-link" type="button" data-title="View Bio" data-target="#view-bio" data-toggle="modal"><i class="material-icons pmd-sm">add</i></a>
+                          	<a class="media-avatar" href="javascript:void(0)" title="Praveen Javali - Founder and Techno Evangelist ">
+                          		<img src="assets/img/team-1.jpg"  alt="Praveen Javali - Founder and Techno Evangelist"/>
+                       		</a>
+                        </div>
+                        <!-- Card header -->
+                        <div class="pmd-card-title">
+                          	<h5 class="pmd-card-title-text">
+                          		<a href="javascript:void(0)" title="Praveen Javali - Founder and Techno Evangelist">Praveen Javali</a>
+                        	</h5>
+                          	<p class="pmd-card-subtitle-text">Founder and Techno Evangelist</p>
+                        </div>
+                    </div>
+                </div><!-- End Members Card-->
+               
+				
+				
+               
+            </div><!-- End Members List-->
+
+            <div class="container text-center ">
+                    <h2 class="text-center"> Team Members </h2>
+                    <p class="lead text-center">We are a team of<span><strong> Developers, Designers and Product Managers</strong></span>
+                        building usable software products for startups and companies. We aspire
+                        to be the best in our craft of developing web and mobile applications 
+                       and building a successful business around it. We also constantly work 
+                       towards building a place where we love to work.</p>
+            </div>
+        
+        </div>
+    </div> <!-- End Section Our Board Members --> 
+    <!-- Members Detail -->	
+    <div tabindex="-1" class="modal fade" id="view-bio" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+        		<div class="modal-body">	
+                    <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                    <div class="member-informations">
+                        <div class="post-thumbnail pmd-z-depth">
+                            <img src="assets/img/team-1.jpg" alt="Praveen Javali" class="img-responsive ">
+                        </div><!-- .post-thumbnail -->
+                        <h2 class="pmd-card-title-text">Praveen Javali</h2>
+                        <div class="designation">Founder and Techno Evangelist</div>
+                        <a href="mailto:pjavali@jubilantsolutions.in" class="">pjavali@jubilantsolutions.in</a>
+                    </div>                    
+                    <div class="member-biography text-left">
+                        <p>Praveen started his career in Marketing and then transforming himself into Software Engineer by working on large-scale enterprise products. Currently Praveen is working in the leadership role at Jubilant Solutions.</p>
+                        <p>His responsibilities include passing vision to all the stakeholders, putting right people at the right place and make sure making deliveries on right time and on every time.</p>
+                        <p>Working towards building a company where the right ideas grow.</p>
+                        <p>Praveen received his degree in Business Management from S D M College of Bussinees Mangement, Mangalore University and MBA (E-Business)from WeShool,Mumbai.</p>
+                        <p>Apart from building technology products and businesses, Praveen has an active interest in learning Painting,especially Watercolor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--End Members Detail -->
+	
+   
+	<!------------------------------
+		footer
+ 	------------------------------->                
+	<footer id="contact" class="section site-footer">
+        <div class="container">
+
+            <!---------adding side service content <div class="container">-------->
+           
+                <h2 class="section-title text-center mb-0 mb-md-5" style="color: aliceblue">
+                    Let Us Build Great Products Together
+                </h2>
+           
+			<h2 class="text-center inverse text-capitalize">Contact Us</h2>
+			<!--Request form -->
+			<div class="card-form">
+			   <form class="form-inverse">
+					<div class="text-left">
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label for="regular2" class="control-label">Name</label>
+							<input type="text" id="regular2" class="form-control">
+						</div>
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label for="regular3" class="control-label">Email</label>
+							<input type="text" id="regular3" class="form-control">
+						</div>
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label for="regular4" class="control-label">Contact Number</label>
+							<input type="text" id="regular4" class="form-control">
+						</div>
+
+						<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							<label class="control-label">Message</label>
+							<textarea class="form-control" placeholder="" ></textarea>
+						</div>
+					</div>
+					<div class="text-center">
+						<button type="button" class="btn btn-primary pmd-btn-outline pmd-ripple-effect btn-lg">Reset</button>
+						<button type="button" class="btn btn-primary pmd-ripple-effect btn-lg">Submit</button>
+					</div>
+				</form>                        
+			</div><!-- End Request form -->
+           
+            <!-- Social icons -->
+            <div class="social-icons text-center">
+            	<h2 class="inverse text-capitalize">follow us on</h2>
+    			<ul class="icons-medium list-inline">
+        			<li class="facebook">
+                    	<a href="#" target="_blank" class="pmd-ripple-effect">
+							<svg version="1.1"  x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M17.5,14.5c0,0.504,0,3,0,3h-2v2.994l2,0.006v10h4v-10h3c0,0,0-0.985,0-3c-0.35,0-3,0-3,0s0-2.657,0-3
+                                        c0-0.344,0.569-1,1-1c0.43,0,1.16,0,2,0c0-0.459,0-1.537,0-3c-1.121,0-2.438,0-3,0C17.307,10.5,17.5,13.997,17.5,14.5z"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>		
+                    <li class="instagram">
+                    	<a href="#" target="_blank" class="pmd-ripple-effect">
+							<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M26.071,9.938H13.803c-2.132,0-3.865,1.734-3.865,3.865v12.271c0,2.131,1.734,3.864,3.865,3.864h12.271
+                                        c2.131,0,3.864-1.734,3.864-3.864V13.803C29.938,11.672,28.203,9.938,26.071,9.938L26.071,9.938z M27.289,12.174l0.438-0.001v3.319
+                                        l-3.344,0.011l-0.011-3.319L27.289,12.174z M19.938,16.592c2.774,0,3.346,2.604,3.346,3.347c0,1.843-1.502,3.345-3.346,3.345
+                                        c-1.846,0-3.346-1.502-3.346-3.345C16.591,19.195,17.164,16.592,19.938,16.592L19.938,16.592z M27.745,25.83
+                                        c0,1.057-0.858,1.916-1.917,1.916H14.009c-1.058,0-1.917-0.858-1.917-1.916v-8.119h2.777c-0.258,0.635-0.403,1.501-0.403,2.228
+                                        c0,3.015,2.452,5.469,5.468,5.469c3.017,0,5.468-2.454,5.468-5.469c0-0.727-0.146-1.593-0.402-2.228h2.744v8.119H27.745z
+                                         M27.745,25.83"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>		
+                    <li class="youtube">
+                    	<a href="#" target="_blank" class="pmd-ripple-effect">
+							<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                                <g>
+                                    <path fill="#FFFFFF" d="M29.988,18.326c-0.007-0.402-0.039-0.91-0.094-1.523c-0.057-0.614-0.137-1.163-0.24-1.646
+                                        c-0.119-0.543-0.378-1.001-0.775-1.373c-0.398-0.372-0.861-0.588-1.391-0.647c-1.651-0.186-4.147-0.278-7.488-0.278
+                                        s-5.837,0.093-7.489,0.278c-0.528,0.06-0.99,0.275-1.384,0.647c-0.395,0.372-0.651,0.83-0.771,1.373
+                                        c-0.111,0.483-0.195,1.032-0.251,1.646c-0.056,0.613-0.087,1.121-0.095,1.523C10.004,18.728,10,19.286,10,20
+                                        s0.004,1.272,0.011,1.674c0.007,0.402,0.039,0.91,0.095,1.523c0.056,0.614,0.136,1.163,0.24,1.646
+                                        c0.119,0.543,0.377,1.001,0.775,1.373c0.398,0.371,0.861,0.587,1.39,0.646c1.652,0.187,4.148,0.279,7.489,0.279
+                                        s5.837-0.093,7.488-0.279c0.529-0.06,0.99-0.275,1.385-0.646c0.395-0.372,0.65-0.83,0.77-1.373
+                                        c0.111-0.483,0.195-1.032,0.252-1.646c0.055-0.613,0.087-1.121,0.094-1.523C29.996,21.272,30,20.714,30,20
+                                        S29.996,18.728,29.988,18.326z M23.951,20.603l-5.714,3.571c-0.104,0.074-0.231,0.111-0.38,0.111c-0.111,0-0.227-0.029-0.346-0.089
+                                        c-0.246-0.134-0.368-0.343-0.368-0.625v-7.143c0-0.282,0.123-0.491,0.368-0.625c0.253-0.134,0.495-0.127,0.726,0.022l5.714,3.571
+                                        c0.223,0.126,0.334,0.327,0.334,0.603S24.174,20.477,23.951,20.603z"/>
+                                </g>
+                            </svg>
+                    	</a>
+                    </li>
+    			</ul>
+    		</div><!--End social icons -->
+		</div>
+
+        <!-- Copyrights -->
+        <div class="copyrights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <ul class="footer-menu list-inline">
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="site-info text-right">
+                            <span class="crafted">&copy; 2017. Jubilant Solutions, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Copyrights -->
+        
+	</footer>
+	<!-- .site-footer --> 
+    
+    <!--Jquery-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <!--Bootstrap js-->
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!--Propeller js-->
+    <script type="text/javascript" src="assets/js/propeller.min.js"></script>
+    
+    <!--Owl Carousel js-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    
+    <!--Quantify custom js-->
+    <script type="text/javascript" src="js/jquery.loadie.js"></script> 
+    <script type="text/javascript" src="assets/js/quantify-global.js"></script> 
+        
+</body>
+</html>
