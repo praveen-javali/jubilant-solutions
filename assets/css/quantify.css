@@ -260,6 +260,7 @@ nav.navbar .navbar-nav > li > a.active {
   text-align: center;
   left: 0;
   right: 0;
+  padding-bottom: 2%;
 }
 .owl-dot {
   border: 1px solid rgba(0, 0, 0, 0.3);
