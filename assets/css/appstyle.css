@@ -7,3 +7,11 @@ body {
   user-select: none; /* Non-prefixed version, 
 								currently supported by Chrome and Opera */
 }
+.gradient-light-blue {
+  background-color: rgba(28, 206, 234, 0.82);
+  background: linear-gradient(
+    -45deg,
+    rgba(147, 26, 222, 0.83) 0%,
+    rgba(28, 206, 234, 0.82) 100%
+  );
+}
